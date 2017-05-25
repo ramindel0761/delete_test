@@ -21,7 +21,7 @@
 cd $HOME
 git clone https://github.com/ramindel0761/setdelete.git
 cd setdelete
-chmod +x beyond.sh
+chmod +x setdelete.sh
 ./setdelete.sh install
 ./setdelete.sh 
 # Enter a phone number & confirmation code.
