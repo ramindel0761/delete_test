@@ -1698,7 +1698,7 @@ patterns = {
 "^[!/#](admindem) (.*)$",
 "^[!/#](leave)$",
 "^[!/#](autoleave) (.*)$", 
-"^[!/#](beyond)$",
+"^[!/#](delete)$",
 "^[!/#](creategroup) (.*)$",
 "^[!/#](createsuper) (.*)$",
 "^[!/#](tosuper)$",
@@ -1768,7 +1768,7 @@ patterns = {
     "^(ارسال) +(.*) (-%d+)$",
 	"^(افزودن) (-%d+)$",
 	"^(پاک کردن حافظه)$",
-	"^(بیوند)$",
+	"^(دلیت)$",
 }, 
 run = run, pre_process = pre_process
 }
