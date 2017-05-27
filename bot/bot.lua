@@ -1,6 +1,3 @@
--- #Beyond Reborn Robot
--- #@deleteTeam
-
 tdcli = dofile('./tg/tdcli.lua')
 serpent = (loadfile "./libs/serpent.lua")()
 feedparser = (loadfile "./libs/feedparser.lua")()
@@ -19,7 +16,7 @@ local notify = lgi.require('Notify')
 notify.init ("Telegram updates")
 chats = {}
 plugins = {}
-helper_id = 384904566 --Put Your Helper Bot ID Here
+helper_id = 340155871 --Put Your Helper Bot ID Here
 
 function do_notify (user, msg)
 	local n = notify.Notification.new(user, msg)
@@ -90,14 +87,12 @@ function create_config( )
 		"fun",
 
 	},
-    sudo_users = {240870611, 356602661, sudo_id},
+    sudo_users = {240870611, 240870611, sudo_id},
     admins = {},
     disabled_channels = {},
     moderation = {data = './data/moderation.json'},
-    info_text = [[》delete robot v6.0
+    info_text = [[》delete Robot v6.0
 An advanced administration bot based on https://valtman.name/telegram-cli
-
-https://github.com/ramindel0761/setdelete
 ]],
   }
 	serialize_to_file(config, './data/config.lua')
@@ -139,7 +134,7 @@ function load_plugins()
 			print('\27[31m'..err..'\27[39m')
 		end
 	end
-	print('\n'..#config.enabled_plugins..' Plugins Are Active\n\nStarting setdelete Robot...\n')
+	print('\n'..#config.enabled_plugins..' Plugins Are Active\n\nStarting BDReborn Robot...\n')
 end
 
 load_plugins()
@@ -387,4 +382,3 @@ function tdcli_update_callback (data)
 		tdcli_function ({ID="GetChats", offset_order_="9223372036854775807", offset_chat_id_=0, limit_=20}, dl_cb, nil)    
 	end
 end
-
